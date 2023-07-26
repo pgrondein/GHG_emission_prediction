@@ -17,23 +17,23 @@ Careful surveys were carried out in 2015 and 2016. The dataset is available [her
 
 Data is from 2015 and 2016.
 
-- 2015: 3340 rows  and 47 features.
-- 2016: 3376 rows and 46 features.
+- **2015**: 3340 rows  and 47 features.
+- **2016**: 3376 rows and 46 features.
 
 ## Features
 
 Features selected for the model, apart from building identification features, are:
 
-- Building Type/Property type: City of Seattle building type classification
-- Year built: Year in which a property was constructed or underwent a complete renovation
-- Property Gross Floor Area Total: Total building and parking gross floor area
-- Electricity/Natural Gas/Steam Use: The annual amount of district electricity/natural gas/steam consumed by the property on-site
-- Source Energy Use: The annual energy used to operate the property, including losses related to the production, transport and distribution of this energy.
+- **Building Type/Property type**: City of Seattle building type classification
+- **Year built**: Year in which a property was constructed or underwent a complete renovation
+- **Property Gross Floor Area Total**: Total building and parking gross floor area
+- **Electricity/Natural Gas/Steam Use**: The annual amount of district electricity/natural gas/steam consumed by the property on-site
+- **Source Energy Use**: The annual energy used to operate the property, including losses related to the production, transport and distribution of this energy.
 
 The “targets” variables are as follows:
 
-- Site Energy Use: The annual amount of energy consumed by the property from all sources of energy
-- Total Green House Gas Emissions: The total amount of greenhouse gas emissions, including carbon dioxide, methane, and nitrous oxide gases released into the atmosphere as a result of energy consumption at the property, measured in metric tons of carbon dioxide equivalent.
+- **Site Energy Use**: The annual amount of energy consumed by the property from all sources of energy
+- **Total Green House Gas Emissions**: The total amount of greenhouse gas emissions, including carbon dioxide, methane, and nitrous oxide gases released into the atmosphere as a result of energy consumption at the property, measured in metric tons of carbon dioxide equivalent.
 
 ## Exploratory Analysis
 
@@ -76,15 +76,15 @@ We will choose a = 5 by default.
 
 Now let's calculate the p-values.
 
-- The TotalGHGEmissions target and the PropertyGFATotal variable are correlated, with a p-value < 5%.
-- The SiteEnergyUse(kBtu) target and the PropertyGFATotal variable are correlated, with a p-value < 5%.
-- The SiteEnergyUse(kBtu) and TotalGHGEmissions targets are correlated, with a p-value < 5%.
+- The **TotalGHGEmissions** target and the **PropertyGFATotal** variable are correlated, with a p-value < 5%.
+- The **SiteEnergyUse(kBtu)** target and the **PropertyGFATotal** variable are correlated, with a p-value < 5%.
+- The **SiteEnergyUse(kBtu)** and **TotalGHGEmissions** targets are correlated, with a p-value < 5%.
 
 The two selected targets seem correlated with at least one of the explanatory variables (PropertyGFATotal), which confirms that it is interesting to use the selected dataset to predict them.
 
 # Data preparation
 
-After separating data into test dataset and train dataset for the model, they are separately cleaned (missing values, outliers, etc.). Then quantitative features are normalized, categorical features binarized.
+After separating data into **test** and **train** dataset for the model, they are separately cleaned (missing values, outliers, etc.). Then quantitative features are normalized, categorical features binarized.
 
 # Modelization
 
@@ -100,12 +100,12 @@ A linear regression model is a model that seeks to establish a linear relationsh
 
 To **limit overfitting**, we can use a technique, **regularization**, which consists in simultaneously controlling the error and the complexity of the model. Two regularization modes are tested:
 
-- Ridge regularization: regression model with a l2 regularization term
-- Lasso regularization: regression model with an l1 regularization term
+- **Ridge regularization**: regression model with a l2 regularization term
+- **Lasso regularization**: regression model with an l1 regularization term
 
 ### Decision Tree
 
-A Decision Tree is a Machine Learning algorithm for classifying data based on sequences of conditions. It is a nonlinear binary decision sequence model.
+A **Decision Tree** is a Machine Learning algorithm for classifying data based on sequences of conditions. It is a nonlinear binary decision sequence model.
 
 ### RandomForest
 
@@ -115,10 +115,10 @@ A Decision Tree is a Machine Learning algorithm for classifying data based on se
 
 In order to decide between the different models tested, the following metrics were used:
 
-- R²: Coefficient of determination, square of the Pearson correlation, must be maximized.
-- MAE (Mean Absolute Error) & MAPE (Mean Absolute Percentage Error): sum of absolute errors divided by the size of the sample. Should be minimized.
-- RMSE (Root Mean Squared Error): Should be minimized.
-- Computation time.
+- **R²**: Coefficient of determination, square of the Pearson correlation, must be maximized.
+- **MAE** (Mean Absolute Error) & MAPE (Mean Absolute Percentage Error): sum of absolute errors divided by the size of the sample. Should be minimized.
+- **RMSE** (Root Mean Squared Error): Should be minimized.
+- **Computation time**
 
 # Conclusion
 
@@ -126,9 +126,9 @@ The best hyperparameters are determined by GridSearch.
 
 |  | R²  | MAE | MAPE | RMSE | Computational Time |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 'Dummy Regressor'  | 0.00  | >> 1 | >> 1 | >> 1 | <<< 0.001 s |
-| 'Linear Regression'  | 0.78  | 0.54 | 0.26 | 0.71 | <<< 0.001 s |
-| 'Regression Ridge'  | 0.82  | 0.55 | 0.25 | 0.71 | <<< 0.001 s |
-| 'Regression Lasso'  | 0.80  | 0.53 | 0.25 | 0.70 | 0.12 s |
-| 'Decision Tree'  | 0.94  | 0.16 | 0.04 | 0.40 | <<< 0.001 s |
-| 'Random Forest'  | 0.96  | 0.12 | 0.03 | 0.31 | 0.48 s |
+| `Dummy Regressor`  | 0.00  | >> 1 | >> 1 | >> 1 | <<< 0.001 s |
+| `Linear Regression`  | 0.78  | 0.54 | 0.26 | 0.71 | <<< 0.001 s |
+| `Regression Ridge`  | 0.82  | 0.55 | 0.25 | 0.71 | <<< 0.001 s |
+| `Regression Lasso`  | 0.80  | 0.53 | 0.25 | 0.70 | 0.12 s |
+| `Decision Tree`  | 0.94  | 0.16 | 0.04 | 0.40 | <<< 0.001 s |
+| `Random Forest`  | 0.96  | 0.12 | 0.03 | 0.31 | 0.48 s |
