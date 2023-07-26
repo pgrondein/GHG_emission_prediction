@@ -126,6 +126,9 @@ The best hyperparameters are determined by GridSearch.
 
 |  | R²  | MAE | MAPE | RMSE | Computational Time |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 'Dummy Regressor'  | 0.00  | >> 1 | >> 1 | >> 1 | <<< 0.001 s |
-| 'Dummy Regressor'  | 0.00  | >> 1 | >> 1 | >> 1 | <<< 0.001 s |
+| 'Linear Regression'  | 0.78  | 0.54 | 0.26 | 0.71 | <<< 0.001 s |
+| 'Regression Ridge'  | 0.82  | 0.55 | 0.25 | 0.71 | <<< 0.001 s |
+| 'Regression Lasso'  | 0.80  | 0.53 | 0.25 | 0.70 | 0.12 s |
+| 'Decision Tree'  | 0.94  | 0.16 | 0.04 | 0.40 | <<< 0.001 s |
+| 'Random Forest'  | 0.96  | 0.12 | 0.03 | 0.31 | 0.48 s |
