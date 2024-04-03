@@ -59,7 +59,7 @@ The exploratory analysis on the distribution of building types reveals that only
 
 #### Target 2 : Site Energy Use 
 
-<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/e2ef019f-d0ab-4f46-9c21-aa0ff4203fae" height="400">
+<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/f3916561-5c8a-4786-b718-c0da888f360d" height="400">
 
 ### Bivariate Analysis
 
