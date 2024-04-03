@@ -1,7 +1,7 @@
 
 # Green House Gas Emission prediction
 
-![banniere2](https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/9c75d319-2ca6-48fc-9c74-3f9f053aa465)
+![banniere](https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/ad4a5c04-4189-47bb-a0ca-3cc6cf8d34dc)
 
 ## Context
 
