@@ -51,7 +51,7 @@ The exploratory analysis on the distribution of building types reveals that only
 
 #### Total Property Gross Floor Area
 
-<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/e11b9477-72f4-446f-8f45-5c4eda14d8ca" height="400">
+<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/241cf52a-1c62-4aa0-a954-56f67076400f" height="400">
 
 #### Target 1 : Total Green House Gas Emissions
 
