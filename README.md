@@ -47,7 +47,7 @@ The exploratory analysis on the distribution of building types reveals that only
 
 #### Year Built
 
-<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/2cdc417f-72bd-41b0-aa42-a9c95f2ec410" height="400">
+<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/31746e07-03bf-4748-9a4d-fc4605d6d697" height="400">
 
 #### Total Property Gross Floor Area
 
@@ -63,7 +63,7 @@ The exploratory analysis on the distribution of building types reveals that only
 
 ### Bivariate Analysis
 
-![corr](https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/204a9137-639b-4b66-818c-44bb4265746c)
+![corr](https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/9c4bd558-fe47-4ae0-ab09-f58379002621)
 
 Some quantitative features appear to be strongly correlated.
 
