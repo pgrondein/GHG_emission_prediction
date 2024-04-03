@@ -41,7 +41,7 @@ The “targets” variables are as follows:
 
 #### Type of Building
 
-<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/d26a71cb-4a6d-418a-b433-de82fab40e49" height="400">
+<img src="https://github.com/pgrondein/GHG_emission_prediction/assets/113172845/57ce84e2-4d6c-41d1-b7b3-549a804ac0e4" height="400">
 
 The exploratory analysis on the distribution of building types reveals that only 50% of the buildings considered are non-residential. Residential building data is removed.
 
